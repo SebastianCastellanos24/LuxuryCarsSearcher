@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luxury Cars</title>
+    <link rel="icon" type="image/x-icon" href="img/car.svg">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="min-h-screen hero">
+    <div class="max-w-5xl m-auto p-10 md:p-12">
+        <h1 class="text-white text-4xl mb-4 font-bold mt-3">Find your ideal car</h1>
+
+        <form id="searcher" class="bg-white p-6 rounded border-yellow-600 border-2">
+            <div class="box">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5 text-yellow-600 font-bold">
+                    <div>
+                        <label for="brand">Brand</label>
+                        <select id="brand" class="w-full p-2 rounded border-2 border-yellow-600">
+                            <option value="">Select an option</option>
+                            <option value="Bugatti">Bugatti</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes Benz">Mercedes Benz</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Dodge">Dodge</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Lykan">Lykan HyperSport</option>
+                        </select>
+                    </div>
+                    <div >
+                        <label for="year">Year</label>
+                        <select class="w-full p-2 rounded border-2 border-yellow-600" id="year">
+                            <option value="">Select an option</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="min">Min Price</label>
+                        <select id="min" class="w-full p-2 rounded border-2 border-yellow-600">
+                                <option value="">Select an option</option>
+                                <option value="20000">20,000</option>
+                                <option value="30000">30,000</option>
+                                <option value="40000">40,000</option>
+                                <option value="50000">50,000</option>
+                                <option value="60000">60,000</option>
+                                <option value="70000">70,000</option>
+                                <option value="80000">80,000</option>
+                                <option value="90000">90,000</option>
+                                <option value="1000000">100,000</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="max">Max Price</label>
+                        <select id="max" class="w-full p-2 rounded border-2 border-yellow-600">
+                                <option value="">Select an option</option>
+                                <option value="20000">20,000</option>
+                                <option value="30000">30,000</option>
+                                <option value="40000">40,000</option>
+                                <option value="50000">50,000</option>
+                                <option value="60000">60,000</option>
+                                <option value="70000">70,000</option>
+                                <option value="80000">80,000</option>
+                                <option value="90000">90,000</option>
+                                <option value="1000000">100,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-yellow-600 font-bold">
+                    <div>
+                        <label for="doors">Doors</label>
+                        <select id="doors" class="w-full p-2 rounded border-2 border-yellow-600">
+                                <option value="">Select an option</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transmission">Transmission</label>
+                        <select id="transmission" class="w-full p-2 rounded border-2 border-yellow-600">
+                                <option value="">Select an option</option>
+                                <option value="automatic">Automatic</option>
+                                <option value="manual">Manual</option>
+                        </select>
+                    </div>
+                    <div >
+                        <label for="color">Color</label>
+                        <select id="color" class="w-full p-2 rounded border-2 border-yellow-600">
+                                <option value="">Select an option</option>
+                                <option value="Black">Black</option>
+                                <option value="Blue">Blue</option>
+                                <option value="White">White</option>
+                                <option value="Red">Red</option>
+                                <option value="Gray">Gray</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="resultsBox" class="max-w-5xl bg-white p-2 md:p-6 rounded border-yellow-600 border-2 mt-4">
+            <h1 class="text-center text-yellow-600 font-bold text-4xl mb-4">Results</h1>
+            <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+
+    </div>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
